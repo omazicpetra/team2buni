@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#191919">
+  <meta name="description" content="Inside the Blend: a Guild unboxing experience. Watch the story, discover the flavour, and join your fellow members.">
+  <title>Inside the Blend · The Guild</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" href="assets/rubik-dirt.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="state.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-start">
+        <button class="menu-trigger" data-action="menu" aria-label="Open menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg><span>Menu</span></button>
+        <a class="shop-link" href="https://moersleutel.com/shop/" target="_blank" rel="noopener noreferrer">Shop</a>
+      </div>
+      <a class="brand" href="#watch" aria-label="Moersleutel — The Guild home"><span>MOERSLEUTEL</span><small>BEER ENGINEERS</small></a>
+      <div class="header-end">
+        <button class="icon-button search-trigger" data-action="search" aria-label="Search the Guild"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button>
+        <button class="member-button" data-action="profile" aria-label="Your member profile"><span class="avatar gold" id="header-avatar">YOU</span><span>Guild member</span></button>
+      </div>
+    </div>
+  </header>
+  <div id="storage-warning" class="storage-warning" hidden>Your browser cannot save this visit. You can still explore; progress will reset when you close the page.</div>
+  <main id="main" class="site-main" tabindex="-1"></main>
+  <footer class="site-footer"><div class="footer-inner"><a href="#watch" class="footer-brand">MOERSLEUTEL · THE GUILD</a><div><span>University concept · Sample edition · 18+</span><button data-action="demo">Demo controls</button></div></div></footer>
+  <dialog id="dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><div class="noscript">Enable JavaScript to explore the interactive Guild experience.</div></noscript>
+</body>
+</html>
